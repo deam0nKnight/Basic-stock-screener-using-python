@@ -1,18 +1,6 @@
 
 #pre-requisite yfinance api - pip install yfinance
 import yfinance as yf
-import pandas as pd
-import os
-#Citation - #website used to download the csv for list of stocks in the sp 500 = https://stockmarketmba.com/stocksinthesp500.php
-#only the Symbol Column is used. Brk.b was editied to Brk-b
-try:
-    #reading file
-    #change file path
-    path = "S:/School/Python/files IO/Project/Stocks in the SP 500 Index.csv" #file is sorted by market cap
-    stock_df = pd.read_csv(path) #using pandas to read csv as df. 
-    stocks = list(stock_df['Symbol'][:50]) #saving the top 50 stocks by market cap to a list 
-except OSError as osError:
-    print('check file path and file name-',osError)
 
 s_info = {}
 def get_quote(stock,time='ytd'): #defining a function to get the historical price of a stock
