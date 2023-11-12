@@ -1,5 +1,5 @@
 # Basic-stock-screener-using-python
-# this is a basic stock screen that will download data from yahoo finance using the yfinance api
+# this is a basic stock screen that will download data from yahoo finance using the yfinance api. It was my first full project in python. 
 ## there are 5 options to choose from:
 ## 1) Yahoo buy/sell/hold recommendations?
 ## 2)buy rating - 5-day positive stock return?
